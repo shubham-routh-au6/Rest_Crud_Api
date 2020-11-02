@@ -4,7 +4,21 @@
 
 - 🔭 It is a Restful crud Api.
 - 🌱 There are altogether 6 routes:
-- ⚡ (1) post route("/createUser") to create a new user.
+- ⚡ (1) post route("/createUser") to create a new user and the body requires the following info:
+- {
+  "name":"userInput",
+  "email":"userInput",
+  "password":"userInput",
+  "mobile":"9862124322",
+  "address":{
+  "street":"userInput",
+  "locality":"userInput",
+  "city":"userInput",
+  "state":"userInput",
+  "pincode":"chuserInputeck",
+  "coordinatesType":{"type":"point", "coordinates":[22.46, 82.98]}
+  }
+  }
 - 🥅 (2) get route("/allUser") to get all user that exist in database.
 - ⚡ (3) put route("/updateUser/:id") to update an existing user(a query param id is required).
 - 🌱 (4) delete route("/deleteUser/:id") to delete an existing user(a query param id is required).
